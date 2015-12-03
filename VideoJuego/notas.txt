@@ -1,0 +1,44 @@
+﻿:::Space Invader,Pacman implemented under racket:::
+
+::1. General Scheme:::
+ ________
+|        |			     ################		                         Interfaz
+| VIDEO  |---->Tcp Connect Racket--->#              # >>>> :::   Servidor     ::: >> Html && Jquery Interface
+| JUEGO	 |			     #  INTERNET    #	      de Procesamiento               v
+----------  			     ################          Linux{Apache,EngineSql}       v
+ 											     v	
+										     :::AJAX && Base de Datos:::
+ToDo: 
+
+Definir Roles de Desarrollo con Brayan.
+	Graficos
+	Logica
+	Manejo de Conexiones.
+:::2. Fechas Averiguar por las fechas:::
+	Preguntar a Francisco por las fechas.
+	Mostrar Idea.
+
+-----------------------------------------------	
+-Esta Carpeta Contendra todo el video Juego Arcade.
+-La organizacion de Modulos Se hizo segun la guia 
+-oficial de racket lang[1].
+-
+-Los archivos del VideoJuego Estan Separados asi:
++Logica/  : Desarrolla el funcionamiento del motor 
+interno logico del video juego, comprueba acciones, 
+Images/:Contiene todas las imagenes relativas, 
+fondos, colores, y contornos.
++Internet/: Controla el envio de datos y puntuacion
+al sistema del scoreboard realizado en html y jquery.
+En la consulta que se realiza se encontraron varias opciones
+y ejemplos de juegos como en [2],[3],[4].
++Presentacion/: Datos de la Presentacion Final del proyecto,
+powerpoints, imagenes, videos...etc.
+
+----------------------------------------------------
+Referecias:
+
+[1]:http://docs.racket-lang.org/guide/module-basics.html
+[2]:http://https://github.com/darrencruse/pong-world-racket
+[3]:http://austinmaddocks.weebly.com/drracket.html
+[4]:http://docs.racket-lang.org/games/
