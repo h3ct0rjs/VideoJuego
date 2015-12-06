@@ -1,0 +1,7 @@
+perform a GET petition:
+
+curl localhost:9999
+
+perform a POST petition:
+
+curl -X POST -d "username=manuel&score=01" localhost:9999

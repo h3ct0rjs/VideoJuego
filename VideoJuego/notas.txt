@@ -3,9 +3,9 @@
 ::1. General Scheme:::
  ________
 |        |			     ################		                         Interfaz
-| VIDEO  |---->Tcp Connect Racket--->#              # >>>> :::   Servidor     ::: >> Html && Jquery Interface
-| JUEGO	 |			     #  INTERNET    #	      de Procesamiento               v
-----------  			     ################          Linux{Apache,EngineSql}       v
+| VIDEO  |---->Tcp Connect Racket--->   #              # >>>> :::   Servidor     ::: >> Html && Jquery Interface
+| JUEGO	 |			     #  Local       #	      de Procesamiento               v
+----------  			 ################          Linux{Apache,EngineSql}       v
  											     v	
 										     :::AJAX && Base de Datos:::
 ToDo: 
