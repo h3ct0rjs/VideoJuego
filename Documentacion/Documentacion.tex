@@ -1,5 +1,4 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Capture the flag Writeup Template. 
 % LaTeX Template
 % Version 1.0 
 %
@@ -9,7 +8,6 @@
 % Pereira Security Team 2015.
 % License:
 % CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
-%
 %
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
@@ -22,6 +20,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{color}
+\usepackage{listings}
 \usepackage{hyperref}
 \hypersetup{
     colorlinks,
@@ -98,8 +97,28 @@ Es un juego de acción en 2D donde un humano debe proteger la tierra de los extr
 Space Invaders se ha actualizado y puesto en libertad en muchas plataformas diferentes, pero todos han sido en forma de dos dimensiones estándar. Hasta el momento Taito nunca ha lanzado una versión en 3D del juego. Sin embargo, en 1999, Space Invaders fue re-lanzado para el Nintendo 64. Aunque los fondos y los personajes fueron diseñados en 3D, el juego sigue siendo un shooter en 2D.
 
 \section{Requisitos para Correr}
-asdsad
+Para correr este juego se debe correr con nla opcion Determine Language from Source, para que el archivo del juego 
+permita  selesccionar el juego, ademas de ello solo por seguridad puedes incrementar el limite de memoria de 128MB 
+a 256MB, es estrictamente necesario que las siguientes lineas se ejecuten:
+\begin{lstlisting}[language=python]
+(require 2htdp/iamge)  //Importa el paquete de 2htdp image.
+(require 2htdp/universe)
+(require math)
+\end{lstlisting}
+El juego se encuentra probado bajo la version 6.2.1 de \textbf{DrRacket} para correr en plataformas Microsoft Windows versiones \textit{ 7,8,8.1,10 Profesional},además  Distribuciones Gnu\/Linux \textbf{\textit{Debian}} y Derivados.
+En caso de tener problemas consulte a los desarrolladores.
+
 \section{Detalles Tecnicos de  DrRacket \label{Funciones}}
+Para el diseño de este juego y con el fin de poner en practica el concepto de divide and conquer, se crearon las 
+siguientes funciones:
+\begin{description}
+    \item[Comunicador m:] Se encarga de mostrar por pantalla la nave, y enviar los datos a otra funcion denominada \textit{mostrar-balas}
+    \item[ver-aliens b:] Se encarga de mostrar los aliens por pantalla, con movimientos.
+    \item[monitoreo :]Se encarga de cambiar los valores, también se utiliza para actualizar la posicin de objetos, y crear objetos de manera temporizada. 
+    \item[Cambia Posición Aliens:]Actualiza la posición de los aliens dentro de la ventana designada.
+    \item[Mouse] Maneja la posicion de la nave utilizando el mouse, las posiciones de esta solo son en 1d 
+        en el eje X, descarta las posicion del mouse en Y,Z.
+\end{description}
 \subsection{Creacion de Ventanas}
 
 \subsection{Funciones de Movimiento}
