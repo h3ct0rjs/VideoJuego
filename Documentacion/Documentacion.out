@@ -3,12 +3,18 @@
 \BOOKMARK [2][-]{subsection.2.1}{Principio Basico}{section.2}% 3
 \BOOKMARK [2][-]{subsection.2.2}{Iconos}{section.2}% 4
 \BOOKMARK [1][-]{section.3}{Requisitos para Correr}{}% 5
-\BOOKMARK [1][-]{section.4}{Detalles Tecnicos de DrRacket }{}% 6
-\BOOKMARK [2][-]{subsection.4.1}{Creacion de Ventanas}{section.4}% 7
-\BOOKMARK [2][-]{subsection.4.2}{Funciones de Movimiento}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.3}{Funciones de Disparo}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.4}{Funciones de Dificulta}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.5}{Funciones de Sonido}{section.4}% 11
-\BOOKMARK [1][-]{section.5}{Links de Paginas de Inter\351s }{}% 12
-\BOOKMARK [1][-]{section.6}{Agradecimientos}{}% 13
-\BOOKMARK [1][-]{section.7}{Adjuntos}{}% 14
+\BOOKMARK [1][-]{section.4}{Detalles Tecnicos de DrRacket}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Creaci\363n de Ventanas}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Funcion Principal}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Estructura Mundo}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Constantes}{section.4}% 10
+\BOOKMARK [3][-]{subsubsection.4.4.1}{Constantes:Sonidos}{subsection.4.4}% 11
+\BOOKMARK [2][-]{subsection.4.5}{Dificultad}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.6}{Crear Enemigos: Aliens}{section.4}% 13
+\BOOKMARK [3][-]{subsubsection.4.6.1}{Movimiento de Izquierda a Derecha de los Aliens}{subsection.4.6}% 14
+\BOOKMARK [3][-]{subsubsection.4.6.2}{Eliminar Aliens Muertos}{subsection.4.6}% 15
+\BOOKMARK [2][-]{subsection.4.7}{Funciones de Movimiento}{section.4}% 16
+\BOOKMARK [2][-]{subsection.4.8}{Funciones de Disparo}{section.4}% 17
+\BOOKMARK [1][-]{section.5}{Links de Paginas de Inter\351s }{}% 18
+\BOOKMARK [1][-]{section.6}{Adjuntos}{}% 19
+\BOOKMARK [1][-]{section.7}{Agradecimientos}{}% 20
