@@ -119,6 +119,7 @@ siguientes funciones:
     \item[Mouse] Maneja la posicion de la nave utilizando el mouse, las posiciones de esta solo son en 1d 
         en el eje X, descarta las posicion del mouse en Y,Z.
 \end{description}
+
 \subsection{Creacion de Ventanas}
 
 \subsection{Funciones de Movimiento}
@@ -159,3 +160,50 @@ Agradecimientos en esta seccion \href{http://www.ejemplourl.org}{Ejemplo URL}
 
 \end{itemize}
 \end{document}
+%
+%|   LOGROS
+
+%tamaño de vantana presonalizable
+%fondo e imagenes personalizables con transparencia
+%movimiento con raton y tecado
+%enemigos en movimiento
+%posibilidad de game over
+
+  
+%     PENDIENTE
+%integrar sonidos
+%poder matar a los enemigos
+%poder adicionar enemmigos
+
+
+
+% MANUAL DE PROGRAMADOR, Esto ira en el manual se eliminara cuando el manual este completo.
+%Manual esta hecho en latex.
+%Este codigo necesita mas de 128Mb de ram, preferiblemente incremente la memoria.a 256Mb.
+%ok
+%lenguaje --> lang racket
+
+%El mundo se utiliza para que barias funciones interactuen simultaneamente 
+%y se puedan embiar parametros de una forma facil, la funcion principal 
+%(big-bang) embiala actualizaciones contantemente a cientas funciones,
+%la estructula para usar es: 
+
+%(define-struct identificador [rama1 rama2 ....])
+
+%(big-bang identificador
+%[aqui-caracteristica-a-emplear mi-funcion]
+%[aqui-caracteristica-a-emplear mi-funcion2]
+
+%big-bang embia todos los datos a las funciones secuencialmente
+
+%para extraer los valores del mundo que definimos ariva hacemos 
+%el llamado de cualquiera de las siguentes funciones
+ 
+% (mundo-jugador a)
+% (mundo-disparo a)
+% (mundo-enemigos a)   )
+
+%para cambiar balores del mundo se usa (make-mundo  _ _ _ ) y en las lineas se mencionan los nuevos 
+%Bibliografia
+
+%iconos--> http://www.softicons.com/game-icons/classic-games-icons-by-thvg/space-invaders-5-icon
