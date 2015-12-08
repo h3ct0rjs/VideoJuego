@@ -1,0 +1,15 @@
+\select@language {spanish}
+\contentsline {section}{\numberline {1}Introducci\'on}{3}{section.1}
+\contentsline {section}{\numberline {2}Proposito del Juego}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}Principio Basico}{3}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Iconos}{4}{subsection.2.2}
+\contentsline {section}{\numberline {3}Requisitos para Correr}{4}{section.3}
+\contentsline {section}{\numberline {4}Detalles Tecnicos de DrRacket }{6}{section.4}
+\contentsline {subsection}{\numberline {4.1}Creacion de Ventanas}{6}{subsection.4.1}
+\contentsline {subsection}{\numberline {4.2}Funciones de Movimiento}{6}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.3}Funciones de Disparo}{6}{subsection.4.3}
+\contentsline {subsection}{\numberline {4.4}Funciones de Dificulta}{6}{subsection.4.4}
+\contentsline {subsection}{\numberline {4.5}Funciones de Sonido}{6}{subsection.4.5}
+\contentsline {section}{\numberline {5}Links de Paginas de Inter\IeC {\'e}s }{7}{section.5}
+\contentsline {section}{\numberline {6}Agradecimientos}{8}{section.6}
+\contentsline {section}{\numberline {7}Adjuntos}{9}{section.7}
