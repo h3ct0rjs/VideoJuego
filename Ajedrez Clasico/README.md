@@ -1,22 +1,23 @@
-# Proyecto Final Video Juego 2D Space Invader IS105, U.T.P 2015-2
+# Proyecto Final Video Juego: Ajedres Clasico Stiven Cardona IS105, U.T.P 2015-2
 
-![SpaceInvaders](https://raw.githubusercontent.com/heticor915/VideoJuego/master/Documentacion/images/logo.png)
+![Ajedrez](http://www.rtv.org.mx/masdeportes/wp-content/uploads/sites/4/2015/04/ajedrez-de-maestro.jpg)
 
 
 *VideoJuego*
  : Contiene todo el código desarrollado en Drracket de la version final del video Juego.
 
 *Documentacion*
- : Contiene la documentacion de las funciones, ademas el codigo fuente en LaTeX del manual.
+ : Este Juego no posee documentacion, solo la explicacion en *Presentacion/Presentacion.pptx*
 
 
 ###
 Version
-0.7
+
+Sin version.
 
 ### 
 Requisitos
-Para ejecutar solo se debe descargar o clonar el repositorio, correr el archivo *FSpaceInvader2.0.rkt*, en pretty big si es posible.
+Para ejecutar solo se debe descargar o clonar el repositorio, correr el archivo *ajedrez1.rkt*, en pretty big si es posible.
 
 
 ### Clonar Repositorio
@@ -25,15 +26,13 @@ Desde una distribucion Linux:
 ```sh
 user@evilmachine$ git clone https://github.com/heticor915/VideoJuego
 user@evilmachine$ cd VideoJuego
-user@evilmachine/VideoJuego$ drracket FSpaceInvader2.0.rkt
+user@evilmachine/VideoJuego$ drracket ajedrez1.rkt
 ```
 
 ### Autores :
-Brian Ruiz Idarraga 	      <brianruiz@utp.edu.co>
-Hector F. Jiménez Saldarriaga <hfjimenez@utp.edu.co>
+Stiven Cardona Monsalve <**cardona-627@utp.edu.co**>
 
 Licencia
 ----
-MIT
+Sin Definir, GPLv3. 
 
-**Code Just for Fun, Hell Yeah!**

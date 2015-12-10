@@ -1,14 +1,10 @@
-# Proyecto Final Video Juego 2D Space Invader IS105, U.T.P 2015-2
-
-![SpaceInvaders](https://raw.githubusercontent.com/heticor915/VideoJuego/master/Documentacion/images/logo.png)
-
+# Proyecto Video Juego Culebrita
 
 *VideoJuego*
- : Contiene todo el código desarrollado en Drracket de la version final del video Juego.
+ : *CulebritaSnakeListas.rkt*
 
 *Documentacion*
- : Contiene la documentacion de las funciones, ademas el codigo fuente en LaTeX del manual.
-
+ : Este juego no posee documentacion, pero esta comentado en portugues, no se recuerda el autor.
 
 ###
 Version
@@ -16,7 +12,7 @@ Version
 
 ### 
 Requisitos
-Para ejecutar solo se debe descargar o clonar el repositorio, correr el archivo *FSpaceInvader2.0.rkt*, en pretty big si es posible.
+Para ejecutar solo se debe descargar o clonar el repositorio, correr el archivo *CulebritaSnakeListas.rkt*.
 
 
 ### Clonar Repositorio
@@ -25,15 +21,13 @@ Desde una distribucion Linux:
 ```sh
 user@evilmachine$ git clone https://github.com/heticor915/VideoJuego
 user@evilmachine$ cd VideoJuego
-user@evilmachine/VideoJuego$ drracket FSpaceInvader2.0.rkt
+user@evilmachine/VideoJuego$ drracket CulebritaSnakeListas.rkt
 ```
 
 ### Autores :
-Brian Ruiz Idarraga 	      <brianruiz@utp.edu.co>
-Hector F. Jiménez Saldarriaga <hfjimenez@utp.edu.co>
+Desconocido
 
 Licencia
 ----
-MIT
+Desconocida
 
-**Code Just for Fun, Hell Yeah!**
