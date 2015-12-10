@@ -1,7 +1,10 @@
 #lang racket
 
 ;***************************************************************************
-; El primer bloque de codigo ejecuta el llamado a las librerias requeridas *__________________________________________________________________________________
+;Desarrollador Stiven Cardona Monsalve 
+;cardona-627@utp.edu.co
+;Proyecto Final de Programacion 1. UTP 2015-2.
+; El primer bloque de codigo ejecuta el llamado a las librerias requeridas *
 ; y dibuja el tablero de ajedrez                                           *
 ;***************************************************************************
 
@@ -78,52 +81,52 @@
 ((draw-solid-rectangle ventana1) (make-posn 400 400) 50 50 "white")
 ((draw-rectangle ventana1) (make-posn 50 50) 400 400 "black")
 
-(((draw-pixmap-posn "torre.gif" 'gif/mask) ventana1)(make-posn 60 400 ))
-(((draw-pixmap-posn "torre.gif" 'gif/mask) ventana1)(make-posn 410 400 ))
+(((draw-pixmap-posn "images/torre.gif" 'gif/mask) ventana1)(make-posn 60 400 ))
+(((draw-pixmap-posn "images/torre.gif" 'gif/mask) ventana1)(make-posn 410 400 ))
 
-(((draw-pixmap-posn "torre2.gif" 'gif/mask) ventana1)(make-posn 60 50 ))
-(((draw-pixmap-posn "torre2.gif" 'gif/mask) ventana1)(make-posn 410 50 ))
+(((draw-pixmap-posn "images/torre2.gif" 'gif/mask) ventana1)(make-posn 60 50 ))
+(((draw-pixmap-posn "images/torre2.gif" 'gif/mask) ventana1)(make-posn 410 50 ))
 
-(((draw-pixmap-posn "caballo.gif" 'gif/mask) ventana1)(make-posn 110 400 ))
-(((draw-pixmap-posn "caballo.gif" 'gif/mask) ventana1)(make-posn 360 400 ))
+(((draw-pixmap-posn "images/caballo.gif" 'gif/mask) ventana1)(make-posn 110 400 ))
+(((draw-pixmap-posn "images/caballo.gif" 'gif/mask) ventana1)(make-posn 360 400 ))
 
-(((draw-pixmap-posn "caballo2.gif" 'gif/mask) ventana1)(make-posn 110 50 ))
-(((draw-pixmap-posn "caballo2.gif" 'gif/mask) ventana1)(make-posn 360 50 ))
+(((draw-pixmap-posn "images/caballo2.gif" 'gif/mask) ventana1)(make-posn 110 50 ))
+(((draw-pixmap-posn "images/caballo2.gif" 'gif/mask) ventana1)(make-posn 360 50 ))
 
-(((draw-pixmap-posn "alfil.gif" 'gif/mask) ventana1)(make-posn 160 400 ))
-(((draw-pixmap-posn "alfil.gif" 'gif/mask) ventana1)(make-posn 310 400 ))
+(((draw-pixmap-posn "images/alfil.gif" 'gif/mask) ventana1)(make-posn 160 400 ))
+(((draw-pixmap-posn "images/alfil.gif" 'gif/mask) ventana1)(make-posn 310 400 ))
 
-(((draw-pixmap-posn "alfil2.gif" 'gif/mask) ventana1)(make-posn 160 50 ))
-(((draw-pixmap-posn "alfil2.gif" 'gif/mask) ventana1)(make-posn 310 50 ))
+(((draw-pixmap-posn "images/alfil2.gif" 'gif/mask) ventana1)(make-posn 160 50 ))
+(((draw-pixmap-posn "images/alfil2.gif" 'gif/mask) ventana1)(make-posn 310 50 ))
 
-(((draw-pixmap-posn "rey.gif" 'gif/mask) ventana1)(make-posn 260 400 ))
-(((draw-pixmap-posn "reina.gif" 'gif/mask) ventana1)(make-posn 210 400 ))
+(((draw-pixmap-posn "images/rey.gif" 'gif/mask) ventana1)(make-posn 260 400 ))
+(((draw-pixmap-posn "images/reina.gif" 'gif/mask) ventana1)(make-posn 210 400 ))
 
-(((draw-pixmap-posn "rey2.gif" 'gif/mask) ventana1)(make-posn 260 50 ))
-(((draw-pixmap-posn "reina2.gif" 'gif/mask) ventana1)(make-posn 210 50 ))
+(((draw-pixmap-posn "images/rey2.gif" 'gif/mask) ventana1)(make-posn 260 50 ))
+(((draw-pixmap-posn "images/reina2.gif" 'gif/mask) ventana1)(make-posn 210 50 ))
 
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 60 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 110 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 160 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 210 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 260 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 310 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 360 350 ))
-(((draw-pixmap-posn "peon.gif" 'gif/mask) ventana1)(make-posn 410 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 60 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 110 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 160 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 210 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 260 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 310 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 360 350 ))
+(((draw-pixmap-posn "images/peon.gif" 'gif/mask) ventana1)(make-posn 410 350 ))
 
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 60 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 110 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 160 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 210 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 260 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 310 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 360 100 ))
-(((draw-pixmap-posn "peon2.gif" 'gif/mask) ventana1)(make-posn 410 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 60 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 110 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 160 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 210 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 260 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 310 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 360 100 ))
+(((draw-pixmap-posn "images/peon2.gif" 'gif/mask) ventana1)(make-posn 410 100 ))
 
 
 ;***********************************************************************
 ; Segundo bloque de codigo encargado de definir las posiciones de cada *
-; cuadro del tablero y crear los vectores que contienen la informacion *________________________________________________________________________________________________
+; cuadro del tablero y crear los vectores que contienen la informacion *
 ; de la posicion, son exactamente 64 posiciones                        *
 ;***********************************************************************
 
@@ -191,9 +194,9 @@
  (define a6(make-posn 60 150))
  (define a7(make-posn 60 100))
  (define a8(make-posn 60 50))
- (define vacio(vector "vacio.gif"))
- (define blancas(vector "peon.gif" "torre.gif" "caballo.gif" "alfil.gif" "reina.gif" "rey.gif"))
- (define negras(vector "peon2.gif" "torre2.gif" "caballo2.gif" "alfil2.gif" "reina2.gif" "rey2.gif"))
+ (define vacio(vector "images/vacio.gif"))
+ (define blancas(vector "images/peon.gif" "images/torre.gif" "images/caballo.gif" "images/alfil.gif" "images/reina.gif" "images/rey.gif"))
+ (define negras(vector "images/peon2.gif" "images/torre2.gif" "images/caballo2.gif" "images/alfil2.gif" "images/reina2.gif" "images/rey2.gif"))
  (define abcisas(vector 50 100 150 200 250 300 350 400 450))
  (define ordenadas(vector 50 100 150 200 250 300 350 400 450))
  (define posiciones(vector a8 a7 a6 a5 a4 a3 a2 a1 b8 b7 b6 b5 b4 b3 b2 b1 c8 c7 c6 c5 c4 c3 c2 c1 d8 d7 d6 d5 d4 d3 d2 d1
@@ -201,7 +204,7 @@
  
 ;***********************************************************************************
 ; Vectores con la posicion de las fichas al iniciar estan cargados por defecto con * 
-; la posicion inicial de las fichas "matriz tablero"                               *______________________________________________________________________________________________________________________
+; la posicion inicial de las fichas "matriz tablero"                               *
 ;***********************************************************************************
 
 (define ocho(vector (vector-ref negras 1) (vector-ref negras 2)(vector-ref negras 3)(vector-ref negras 4)(vector-ref negras 5)(vector-ref negras 3)(vector-ref negras 2)(vector-ref negras 1)))
@@ -215,7 +218,7 @@
 (define vectors(vector uno dos tres cuatro cinco seis siete ocho))
 
 ;*******************************************************************************
-; Esta funcion establece un dibujo de la imagen establecida en la  posicion en *__________________________________________________________________________________- 
+; Esta funcion establece un dibujo de la imagen establecida en la  posicion en *
 ; donde se le da click si es que esta en la matriz tablero                     *
 ;*******************************************************************************
 
@@ -388,21 +391,21 @@
           (begin
             (escribir 2)
             (cond
-              ((equal? (que_hay2? d) "peon.gif")(ejecutar d c r s v i))
-              ((equal? (que_hay2? d) "torre.gif")(ejecutar2 d c r s v i))
-              ((equal? (que_hay2? d) "caballo.gif")(ejecutar3 d c r s v i))
-              ((equal? (que_hay2? d) "alfil.gif")(ejecutar4 d c r s v i))
-              ((equal? (que_hay2? d) "reina.gif")(ejecutar5 d c r s v i))
-              ((equal? (que_hay2? d) "rey.gif")(ejecutar6 d c r s v i))
+              ((equal? (que_hay2? d) "images/peon.gif")(ejecutar d c r s v i))
+              ((equal? (que_hay2? d) "images/torre.gif")(ejecutar2 d c r s v i))
+              ((equal? (que_hay2? d) "images/caballo.gif")(ejecutar3 d c r s v i))
+              ((equal? (que_hay2? d) "images/alfil.gif")(ejecutar4 d c r s v i))
+              ((equal? (que_hay2? d) "images/reina.gif")(ejecutar5 d c r s v i))
+              ((equal? (que_hay2? d) "images/rey.gif")(ejecutar6 d c r s v i))
              )
            )
        (cond
-          ((equal? (que_hay2? d) "peon.gif")(ejecutar d c r s v i))
-          ((equal? (que_hay2? d) "torre.gif")(ejecutar2 d c r s v i))
-          ((equal? (que_hay2? d) "caballo.gif")(ejecutar3 d c r s v i))
-          ((equal? (que_hay2? d) "alfil.gif")(ejecutar4 d c r s v i))
-          ((equal? (que_hay2? d) "reina.gif")(ejecutar5 d c r s v i))
-          ((equal? (que_hay2? d) "rey.gif")(ejecutar6 d c r s v i))
+          ((equal? (que_hay2? d) "images/peon.gif")(ejecutar d c r s v i))
+          ((equal? (que_hay2? d) "images/torre.gif")(ejecutar2 d c r s v i))
+          ((equal? (que_hay2? d) "images/caballo.gif")(ejecutar3 d c r s v i))
+          ((equal? (que_hay2? d) "images/alfil.gif")(ejecutar4 d c r s v i))
+          ((equal? (que_hay2? d) "images/reina.gif")(ejecutar5 d c r s v i))
+          ((equal? (que_hay2? d) "images/rey.gif")(ejecutar6 d c r s v i))
        )
    )
  )
@@ -417,21 +420,21 @@
           (begin
             (escribir 1)
             (cond
-              ((equal? (que_hay2? d) "peon2.gif")(ejecutar7 d c r s v i))
-              ((equal? (que_hay2? d) "torre2.gif")(ejecutar8 d c r s v i))
-              ((equal? (que_hay2? d) "caballo2.gif")(ejecutar9 d c r s v i))
-              ((equal? (que_hay2? d) "alfil2.gif")(ejecutar10 d c r s v i))
-              ((equal? (que_hay2? d) "reina2.gif")(ejecutar11 d c r s v i))
-              ((equal? (que_hay2? d) "rey2.gif")(ejecutar12 d c r s v i))
+              ((equal? (que_hay2? d) "images/peon2.gif")(ejecutar7 d c r s v i))
+              ((equal? (que_hay2? d) "images/torre2.gif")(ejecutar8 d c r s v i))
+              ((equal? (que_hay2? d) "images/caballo2.gif")(ejecutar9 d c r s v i))
+              ((equal? (que_hay2? d) "images/alfil2.gif")(ejecutar10 d c r s v i))
+              ((equal? (que_hay2? d) "images/reina2.gif")(ejecutar11 d c r s v i))
+              ((equal? (que_hay2? d) "images/rey2.gif")(ejecutar12 d c r s v i))
              )
            )
        (cond
-          ((equal? (que_hay2? d) "peon2.gif")(ejecutar7 d c r s v i))
-          ((equal? (que_hay2? d) "torre2.gif")(ejecutar8 d c r s v i))
-          ((equal? (que_hay2? d) "caballo2.gif")(ejecutar9 d c r s v i))
-          ((equal? (que_hay2? d) "alfil2.gif")(ejecutar10 d c r s v i))
-          ((equal? (que_hay2? d) "reina2.gif")(ejecutar11 d c r s v i))
-          ((equal? (que_hay2? d) "rey2.gif")(ejecutar12 d c r s v i))
+          ((equal? (que_hay2? d) "images/peon2.gif")(ejecutar7 d c r s v i))
+          ((equal? (que_hay2? d) "images/torre2.gif")(ejecutar8 d c r s v i))
+          ((equal? (que_hay2? d) "images/caballo2.gif")(ejecutar9 d c r s v i))
+          ((equal? (que_hay2? d) "images/alfil2.gif")(ejecutar10 d c r s v i))
+          ((equal? (que_hay2? d) "images/reina2.gif")(ejecutar11 d c r s v i))
+          ((equal? (que_hay2? d) "images/rey2.gif")(ejecutar12 d c r s v i))
        )
    )
  )
@@ -448,18 +451,18 @@
 (define (jaque_torre e c)
   (if (equal? e c )
       (cond
-        ((equal? (que_hay2? c) "rey2.gif")1) 
+        ((equal? (que_hay2? c) "images/rey2.gif")1) 
         (else 0)
       )
       (cond
         ((equal? e 0) 0)
-        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(jaque_torre (convertir (posn-x e)(+(posn-y e)50)) c))
+        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(jaque_torre (convertir (posn-x e)(+(posn-y e)50)) c))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(jaque_torre (convertir (posn-x e)(+(posn-y e)50)) c))
-        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(jaque_torre (convertir (posn-x e)(-(posn-y e)50)) c))
+        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(jaque_torre (convertir (posn-x e)(-(posn-y e)50)) c))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(jaque_torre (convertir (posn-x e)(-(posn-y e)50)) c))
-        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_torre (convertir (-(posn-x e)50)(posn-y e)) c))
+        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_torre (convertir (-(posn-x e)50)(posn-y e)) c))
         ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_torre (convertir (-(posn-x e)50)(posn-y e)) c))
-        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_torre (convertir (+(posn-x e)50)(posn-y e)) c)) 
+        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_torre (convertir (+(posn-x e)50)(posn-y e)) c)) 
         ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_torre (convertir (+(posn-x e)50)(posn-y e)) c))
         (else 0)
       )
@@ -485,19 +488,19 @@
   (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "rey2.gif")1) 
+        ((equal? (que_hay2? c) "images/rey2.gif")1) 
         (else 0)
         )
       )
    (cond
      ((equal? e 0) 0)
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_alfil (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_alfil (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_alfil (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_alfil (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_alfil (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_alfil (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_alfil (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_alfil (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_alfil (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_alfil (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_alfil (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_alfil (convertir (+(posn-x e)50)(-(posn-y e)50)) c))
      (else 0)
    )
@@ -507,27 +510,27 @@
    (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "rey2.gif")1) 
+        ((equal? (que_hay2? c) "images/rey2.gif")1) 
         (else 0)
         )
       )
    (cond
      ((equal? e 0) 0)
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_reina (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_reina (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_reina (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_reina (convertir (+(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (posn-x e)(+(posn-y e)50)) c))
+     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (posn-x e)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(jaque_reina (convertir (posn-x e)(+(posn-y e)50)) c))
-     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(jaque_reina (convertir (posn-x e)(-(posn-y e)50)) c))
+     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina (convertir (posn-x e)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(jaque_reina (convertir (posn-x e)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(posn-y e)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_reina (convertir (-(posn-x e)50)(posn-y e)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_reina (convertir (-(posn-x e)50)(posn-y e)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(posn-y e)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_reina (convertir (+(posn-x e)50)(posn-y e)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_reina (convertir (+(posn-x e)50)(posn-y e)) c))
      (else 0)
     )
@@ -558,18 +561,18 @@
 (define (jaque_torre2 e c)
   (if (equal? e c )
       (cond
-        ((equal? (que_hay2? c) "rey.gif")1) 
+        ((equal? (que_hay2? c) "images/rey.gif")1) 
         (else 0)
       )
       (cond
         ((equal? e 0) 0)
-        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(jaque_torre2 (convertir (posn-x e)(+(posn-y e)50)) c))
+        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(jaque_torre2 (convertir (posn-x e)(+(posn-y e)50)) c))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(jaque_torre2 (convertir (posn-x e)(+(posn-y e)50)) c))
-        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(jaque_torre2 (convertir (posn-x e)(-(posn-y e)50)) c))
+        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(jaque_torre2 (convertir (posn-x e)(-(posn-y e)50)) c))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(jaque_torre2 (convertir (posn-x e)(-(posn-y e)50)) c))
-        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_torre2 (convertir (-(posn-x e)50)(posn-y e)) c))
+        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_torre2 (convertir (-(posn-x e)50)(posn-y e)) c))
         ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_torre2 (convertir (-(posn-x e)50)(posn-y e)) c))
-        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_torre2 (convertir (+(posn-x e)50)(posn-y e)) c)) 
+        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_torre2 (convertir (+(posn-x e)50)(posn-y e)) c)) 
         ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_torre2 (convertir (+(posn-x e)50)(posn-y e)) c))
         (else 0)
       )
@@ -594,19 +597,19 @@
   (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "rey.gif")1) 
+        ((equal? (que_hay2? c) "images/rey.gif")1) 
         (else 0)
         )
       )
    (cond
      ((equal? e 0) 0)
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_alfil2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_alfil2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_alfil2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_alfil2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_alfil2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_alfil2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_alfil2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_alfil2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_alfil2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_alfil2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_alfil2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_alfil2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c))
      (else 0)
    )
@@ -616,27 +619,27 @@
    (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "rey.gif")1) 
+        ((equal? (que_hay2? c) "images/rey.gif")1) 
         (else 0)
         )
       )
    (cond
      ((equal? e 0) 0)
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_reina2 (convertir (+(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_reina2 (convertir (-(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(jaque_reina2 (convertir (-(posn-x e)50)(+(posn-y e)50)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(jaque_reina2 (convertir (+(posn-x e)50)(-(posn-y e)50)) c))
-     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (posn-x e)(+(posn-y e)50)) c))
+     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (posn-x e)(+(posn-y e)50)) c))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(jaque_reina2 (convertir (posn-x e)(+(posn-y e)50)) c))
-     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(jaque_reina2 (convertir (posn-x e)(-(posn-y e)50)) c))
+     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(jaque_reina2 (convertir (posn-x e)(-(posn-y e)50)) c))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(jaque_reina2 (convertir (posn-x e)(-(posn-y e)50)) c))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(posn-y e)) c))
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_reina2 (convertir (-(posn-x e)50)(posn-y e)) c))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_reina2 (convertir (-(posn-x e)50)(posn-y e)) c))
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(posn-y e)) c)) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(jaque_reina2 (convertir (+(posn-x e)50)(posn-y e)) c)) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(jaque_reina2 (convertir (+(posn-x e)50)(posn-y e)) c))
      (else 0)
     )
@@ -659,7 +662,7 @@
 
  
 ;*****************************************************************
-; Establece que hay en una posicion dada por la funcion que hace *_______________________________________________________________ 
+; Establece que hay en una posicion dada por la funcion que hace *
 ; su llamado recursivo                                           *
 ;*****************************************************************
 
@@ -807,8 +810,8 @@
 
 (define (jaque_negras r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "peon2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/peon2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -826,8 +829,8 @@
 )
 (define (jaque_negras2 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "torre2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/torre2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -845,8 +848,8 @@
 )
 (define (jaque_negras3 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "caballo2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/caballo2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -864,8 +867,8 @@
 )
 (define (jaque_negras4 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "alfil2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/alfil2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -883,8 +886,8 @@
 )
 (define (jaque_negras5 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "reina2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/reina2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -901,8 +904,8 @@
 )
 (define (jaque_negras6 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "rey2.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/rey2.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -919,8 +922,8 @@
 )
 (define (jaque_negras7 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "peon.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/peon.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -937,8 +940,8 @@
 )
 (define (jaque_negras8 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "torre.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/torre.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -956,8 +959,8 @@
 )
 (define (jaque_negras9 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "caballo.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/caballo.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -975,8 +978,8 @@
 )
 (define (jaque_negras10 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "alfil.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/alfil.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -994,8 +997,8 @@
 )
 (define (jaque_negras11 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "reina.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/reina.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -1013,8 +1016,8 @@
 )
 (define (jaque_negras12 r s v i)
    (begin
-    (vector-set! (vector-ref vectors v) i "rey.gif")
-    (vector-set! (vector-ref vectors r) s "vacio.gif")
+    (vector-set! (vector-ref vectors v) i "images/rey.gif")
+    (vector-set! (vector-ref vectors r) s "images/vacio.gif")
        (cond
          ((=(jaque_peon (buscar_peon 0)(buscar_rey2 0))1) 1)
          ((=(jaque_torre (buscar_torre 0) (buscar_rey2 0))1) 1)
@@ -1032,8 +1035,8 @@
 )
 (define (jaque_blancas r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "peon.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/peon.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1051,8 +1054,8 @@
 )
 (define   (jaque_blancas2 r s v i)
    (begin
-     (vector-set! (vector-ref vectors v) i "torre.gif")
-     (vector-set! (vector-ref vectors r) s "vacio.gif")
+     (vector-set! (vector-ref vectors v) i "images/torre.gif")
+     (vector-set! (vector-ref vectors r) s "images/vacio.gif")
    (cond
     ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
     ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1070,8 +1073,8 @@
 )
 (define (jaque_blancas3 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "caballo.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/caballo.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1089,8 +1092,8 @@
 )
 (define (jaque_blancas4 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "alfil.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/alfil.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1108,8 +1111,8 @@
 )
 (define (jaque_blancas5 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "reina.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/reina.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1127,8 +1130,8 @@
 )
 (define (jaque_blancas6 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "rey.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/rey.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1147,8 +1150,8 @@
 )
 (define (jaque_blancas7 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "peon2.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/peon2.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1166,8 +1169,8 @@
 )
 (define   (jaque_blancas8 r s v i)
    (begin
-     (vector-set! (vector-ref vectors v) i "torre2.gif")
-     (vector-set! (vector-ref vectors r) s "vacio.gif")
+     (vector-set! (vector-ref vectors v) i "images/torre2.gif")
+     (vector-set! (vector-ref vectors r) s "images/vacio.gif")
    (cond
     ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
     ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1185,8 +1188,8 @@
 )
 (define (jaque_blancas9 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "caballo2.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/caballo2.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1204,8 +1207,8 @@
 )
 (define (jaque_blancas10 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "alfil2.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/alfil2.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1223,8 +1226,8 @@
 )
 (define (jaque_blancas11 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "reina2.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/reina2.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1242,8 +1245,8 @@
 )
 (define (jaque_blancas12 r s v i)
        (begin
-         (vector-set! (vector-ref vectors v) i "rey2.gif")
-         (vector-set! (vector-ref vectors r) s "vacio.gif")
+         (vector-set! (vector-ref vectors v) i "images/rey2.gif")
+         (vector-set! (vector-ref vectors r) s "images/vacio.gif")
          (cond
            ((=(jaque_peon2 (buscar_peon2 0)(buscar_rey 0))1) 1)
            ((=(jaque_torre2 (buscar_torre2 0) (buscar_rey 0))1) 1)
@@ -1265,7 +1268,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "peon.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/peon.gif")(vector-ref posiciones a) )
       (else (buscar_peon (+ a 1)))
      )
     )
@@ -1277,7 +1280,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "torre.gif")(vector-ref posiciones a))
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/torre.gif")(vector-ref posiciones a))
       (else (buscar_torre (+ a 1)))
      )
     )
@@ -1289,7 +1292,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "caballo.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/caballo.gif")(vector-ref posiciones a) )
       (else (buscar_caballo (+ a 1)))
      )
     )
@@ -1301,7 +1304,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "alfil.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/alfil.gif")(vector-ref posiciones a) )
       (else (buscar_alfil (+ a 1)))
      )
     )
@@ -1313,7 +1316,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "reina.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/reina.gif")(vector-ref posiciones a) )
       (else (buscar_reina (+ a 1)))
      )
     )
@@ -1325,7 +1328,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "rey.gif")(vector-ref posiciones a))
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/rey.gif")(vector-ref posiciones a))
       (else (buscar_rey (+ a 1)))
      )
     )
@@ -1337,7 +1340,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "peon2.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/peon2.gif")(vector-ref posiciones a) )
       (else (buscar_peon2 (+ a 1)))
      )
     )
@@ -1349,7 +1352,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "torre2.gif")(vector-ref posiciones a))
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/torre2.gif")(vector-ref posiciones a))
       (else (buscar_torre2 (+ a 1)))
      )
     )
@@ -1361,7 +1364,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "caballo2.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/caballo2.gif")(vector-ref posiciones a) )
       (else (buscar_caballo2 (+ a 1)))
      )
     )
@@ -1373,7 +1376,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "alfil2.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/alfil2.gif")(vector-ref posiciones a) )
       (else (buscar_alfil2 (+ a 1)))
      )
     )
@@ -1385,7 +1388,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "reina2.gif")(vector-ref posiciones a) )
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/reina2.gif")(vector-ref posiciones a) )
       (else (buscar_reina2 (+ a 1)))
      )
     )
@@ -1397,7 +1400,7 @@
   (if (< a 64)
     (begin
      (cond 
-      ((equal? (que_hay2? (vector-ref posiciones a)) "rey2.gif")(vector-ref posiciones a))
+      ((equal? (que_hay2? (vector-ref posiciones a)) "images/rey2.gif")(vector-ref posiciones a))
       (else (buscar_rey2 (+ a 1)))
      )
     )
@@ -1410,8 +1413,8 @@
     ((= f 1)
      (if (=(jaque_blancas r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "peon.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/peon.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1439,8 +1442,8 @@
     ((= f 2)
      (if (=(jaque_blancas2 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "torre.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/torre.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1468,8 +1471,8 @@
     ((= f 3)
      (if (= (jaque_blancas3 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "caballo.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/caballo.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1497,8 +1500,8 @@
     ((= f 4)
      (if (=(jaque_blancas4 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "alfil.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/alfil.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1526,8 +1529,8 @@
     ((= f 5)
      (if (=(jaque_blancas5 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "reina.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/reina.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1555,8 +1558,8 @@
     ((= f 6)
      (if (= (jaque_blancas6 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "rey.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/rey.gif")
            (escribir 3)
            (escribir 4)
            (coordenada 0 0 0 (get-mouse-click ventana1))
@@ -1584,8 +1587,8 @@
     ((= f 7)
      (if (=(jaque_negras r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "peon2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/peon2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1613,8 +1616,8 @@
     ((= f 8)
      (if (=(jaque_negras2 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "torre2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/torre2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1642,8 +1645,8 @@
     ((= f 9)
      (if (=(jaque_negras3 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "caballo2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/caballo2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1671,8 +1674,8 @@
     ((= f 10)
      (if (=(jaque_negras4 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "alfil2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/alfil2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1700,8 +1703,8 @@
     ((= f 11)
      (if (=(jaque_negras5 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "reina2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/reina2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1729,8 +1732,8 @@
     ((= f 12)
      (if (= (jaque_negras6 r s v i)1)
          (begin
-           (vector-set! (vector-ref vectors v) i "vacio.gif")
-           (vector-set! (vector-ref vectors r) s "rey2.gif")
+           (vector-set! (vector-ref vectors v) i "images/vacio.gif")
+           (vector-set! (vector-ref vectors r) s "images/rey2.gif")
            (escribir 3)
            (escribir 5)
            (coordenada3 0 0 0 (get-mouse-click ventana1))
@@ -1760,7 +1763,7 @@
 )
 
 ;*************************************
-; complemento de la funcion compilar *___________________________________________________________________________________________-
+; complemento de la funcion compilar *
 ;*************************************
 
 (define (compilar2 f d c r s v i z)
@@ -1908,7 +1911,7 @@
 )
 
 ;****************************************************************************
-; Esta funcion borra las ficha en una posicion pedida tiene llamados de las *____________________________________________________
+; Esta funcion borra las ficha en una posicion pedida tiene llamados de las *
 ; funciones de dezplazamiento y funciones como comer                        *
 ;****************************************************************************
 (define (borrar c)
@@ -1980,28 +1983,28 @@
    )
  )
 ;*************************************************************************************
-; establace si los parametros dados para el movimiento de la ficha establacida esta  *__________________________________________________
+; establace si los parametros dados para el movimiento de la ficha establacida esta  *
 ; determinado de forma correcta                                                      *
 ;*************************************************************************************
 
 (define (se_puede_peon d c r s v i e) 
   (if (=(posn-y e)(+ (posn-y c) 100))
-     (if (and (equal? (que_hay2? c)"vacio.gif")(equal? (que_hay2? (convertir (posn-x d)(-(posn-y d)50)))"vacio.gif"))
+     (if (and (equal? (que_hay2? c)"images/vacio.gif")(equal? (que_hay2? (convertir (posn-x d)(-(posn-y d)50)))"images/vacio.gif"))
           (jaque 1 d c r s v i 0)
           (coordenada 0 0 0 (get-mouse-click ventana1))
      )
      (cond
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"peon2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"torre2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"caballo2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"alfil2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"reina2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"peon2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"torre2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"caballo2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"alfil2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"reina2.gif"))(jaque 1 d c r s v i 0))
-          ((and (= (posn-x d)(posn-x c))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"vacio.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/peon2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/torre2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/caballo2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/alfil2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/reina2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/peon2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/torre2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/caballo2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/alfil2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/reina2.gif"))(jaque 1 d c r s v i 0))
+          ((and (= (posn-x d)(posn-x c))(= (posn-y d)(+ (posn-y c)50))(equal? (que_hay2? c)"images/vacio.gif"))(jaque 1 d c r s v i 0))
           (else (coordenada 0 0 0 (get-mouse-click ventana1)))
      )
   )
@@ -2009,22 +2012,22 @@
 (define (se_puede_torre  d c r s v i e)
   (if (equal? e c )
       (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 2 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon2.gif")(jaque 2 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre2.gif")(jaque 2 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina2.gif")(jaque 2 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo2.gif")(jaque 2 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil2.gif")(jaque 2 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 2 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon2.gif")(jaque 2 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre2.gif")(jaque 2 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina2.gif")(jaque 2 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 2 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 2 d c r s v i 0))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
       )
       (cond
-        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(se_puede_torre d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
+        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_torre d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(se_puede_torre d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
-        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(se_puede_torre d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
+        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_torre d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(se_puede_torre d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
-        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_torre d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
+        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_torre d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
         ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_torre d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
-        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_torre d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_torre d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
         ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_torre d c r s v i (convertir (+(posn-x e)50)(posn-y e))))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
       )
@@ -2032,12 +2035,12 @@
  )
 (define (se_puede_caballo d c r s v i)
   (cond
-     ((equal? (que_hay2? c) "vacio.gif")(jaque 3 d c r s v i 0))  
-     ((equal? (que_hay2? c) "peon2.gif")(jaque 3 d c r s v i 0))
-     ((equal? (que_hay2? c) "torre2.gif")(jaque 3 d c r s v i 0))
-     ((equal? (que_hay2? c) "reina2.gif")(jaque 3 d c r s v i 0))
-     ((equal? (que_hay2? c) "caballo2.gif")(jaque 3 d c r s v i 0))
-     ((equal? (que_hay2? c) "alfil2.gif")(jaque 3 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/vacio.gif")(jaque 3 d c r s v i 0))  
+     ((equal? (que_hay2? c) "images/peon2.gif")(jaque 3 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/torre2.gif")(jaque 3 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/reina2.gif")(jaque 3 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 3 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 3 d c r s v i 0))
      (else (coordenada 0 0 0 (get-mouse-click ventana1)))
   )
 )
@@ -2045,23 +2048,23 @@
   (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 4 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon2.gif")(jaque 4 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre2.gif")(jaque 4 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina2.gif")(jaque 4 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo2.gif")(jaque 4 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil2.gif")(jaque 4 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 4 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon2.gif")(jaque 4 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre2.gif")(jaque 4 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina2.gif")(jaque 4 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 4 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 4 d c r s v i 0))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
         )
       )
    (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_alfil d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_alfil d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50))))
      (else (coordenada 0 0 0 (get-mouse-click ventana1)))
    )
@@ -2071,31 +2074,31 @@
    (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 5 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon2.gif")(jaque 5 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre2.gif")(jaque 5 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina2.gif")(jaque 5 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo2.gif")(jaque 5 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil2.gif")(jaque 5 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 5 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon2.gif")(jaque 5 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre2.gif")(jaque 5 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina2.gif")(jaque 5 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 5 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 5 d c r s v i 0))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
         )
       )
    (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50))))
-     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
+     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
-     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
+     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_reina d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_reina d c r s v i (convertir (+(posn-x e)50)(posn-y e))))
      (else (coordenada 0 0 0 (get-mouse-click ventana1)))
     )
@@ -2103,53 +2106,53 @@
  )
 (define (se_puede_rey d c r s v i e)
  (if (or (and (equal? d e1)(equal? c h1))(and (equal? d e1)(equal? c a1)))
-     (if (equal? (que_hay2? c) "torre.gif")
+     (if (equal? (que_hay2? c) "images/torre.gif")
      (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_rey d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_rey d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(ejecutar6 d c r s v i 1))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_rey d c r s v i (convertir (-(posn-x e)50)(posn-y e)))) 
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_rey d c r s v i (convertir (-(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(ejecutar6 d c r s v i 2))
      (else (coordenada 0 0 0 (get-mouse-click ventana1)))
      )
      (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 6 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 6 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 6 d c r s v i 0))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
    )
  )
   (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 6 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo2.gif")(jaque 6 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 6 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo2.gif")(jaque 6 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil2.gif")(jaque 6 d c r s v i 0))
         (else (coordenada 0 0 0 (get-mouse-click ventana1)))
    )
  )
 )    
 (define (se_puede_peon2 d c r s v i e) 
   (if (=(posn-y e)(- (posn-y c) 100))
-     (if (and (equal? (que_hay2? c) "vacio.gif")(equal? (que_hay2? (convertir (posn-x d)(+(posn-y d)50)))"vacio.gif"))
+     (if (and (equal? (que_hay2? c) "images/vacio.gif")(equal? (que_hay2? (convertir (posn-x d)(+(posn-y d)50)))"images/vacio.gif"))
           (jaque 7 d c r s v i 0)
           (coordenada3 0 0 0 (get-mouse-click ventana1))
      )
      (cond
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"peon.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"torre.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"caballo.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"alfil.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"reina.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"peon.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"torre.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"caballo.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"alfil.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"reina.gif"))(jaque 7 d c r s v i 0))
-          ((and (= (posn-x d)(posn-x c))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"vacio.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/peon.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/torre.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/caballo.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/alfil.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(- (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/reina.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/peon.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/torre.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/caballo.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/alfil.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(+ (posn-x c)50))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/reina.gif"))(jaque 7 d c r s v i 0))
+          ((and (= (posn-x d)(posn-x c))(= (posn-y d)(- (posn-y c)50))(equal? (que_hay2? c)"images/vacio.gif"))(jaque 7 d c r s v i 0))
           (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
      )
   )
@@ -2157,22 +2160,22 @@
 (define (se_puede_torre2  d c r s v i e)
   (if (equal? e c )
       (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 8 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon.gif")(jaque 8 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre.gif")(jaque 8 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina.gif")(jaque 8 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo.gif")(jaque 8 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil.gif")(jaque 8 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 8 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon.gif")(jaque 8 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre.gif")(jaque 8 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina.gif")(jaque 8 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo.gif")(jaque 8 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil.gif")(jaque 8 d c r s v i 0))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
       )
       (cond
-        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(se_puede_torre2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
+        ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_torre2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(se_puede_torre2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
-        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(se_puede_torre2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
+        ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_torre2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
         ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(se_puede_torre2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
-        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_torre2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
+        ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_torre2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
         ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_torre2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
-        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_torre2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+        ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_torre2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
         ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_torre2 d c r s v i (convertir (+(posn-x e)50)(posn-y e))))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
       )
@@ -2180,12 +2183,12 @@
  )
 (define (se_puede_caballo2 d c r s v i)
   (cond
-     ((equal? (que_hay2? c) "vacio.gif")(jaque 9 d c r s v i 0)) 
-     ((equal? (que_hay2? c) "peon.gif")(jaque 9 d c r s v i 0))
-     ((equal? (que_hay2? c) "torre.gif")(jaque 9 d c r s v i 0))
-     ((equal? (que_hay2? c) "reina.gif")(jaque 9 d c r s v i 0))
-     ((equal? (que_hay2? c) "caballo.gif")(jaque 9 d c r s v i 0))
-     ((equal? (que_hay2? c) "alfil.gif")(jaque 9 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/vacio.gif")(jaque 9 d c r s v i 0)) 
+     ((equal? (que_hay2? c) "images/peon.gif")(jaque 9 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/torre.gif")(jaque 9 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/reina.gif")(jaque 9 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/caballo.gif")(jaque 9 d c r s v i 0))
+     ((equal? (que_hay2? c) "images/alfil.gif")(jaque 9 d c r s v i 0))
      (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
   )
 )
@@ -2193,23 +2196,23 @@
   (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 10 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon.gif")(jaque 10 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "torre.gif")(jaque 10 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina.gif")(jaque 10 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo.gif")(jaque 10 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil.gif")(jaque 10 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 10 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon.gif")(jaque 10 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/torre.gif")(jaque 10 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina.gif")(jaque 10 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo.gif")(jaque 10 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil.gif")(jaque 10 d c r s v i 0))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
         )
       )
    (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_alfil2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_alfil2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50))))
      (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
    )
@@ -2219,31 +2222,31 @@
    (if (equal? e c)
       (begin
         (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 11 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon.gif")(jaque 11 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre.gif")(jaque 11 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina.gif")(jaque 11 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo.gif")(jaque 11 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil.gif")(jaque 11 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 11 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon.gif")(jaque 11 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre.gif")(jaque 11 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina.gif")(jaque 11 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo.gif")(jaque 11 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil.gif")(jaque 11 d c r s v i 0))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
         )
       )
    (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
+     ((and (< (posn-x e)(-(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(+(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
+     ((and (> (posn-x e)(+(posn-x c)50))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (-(posn-x e)50)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(+(posn-y e)50))))
-     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (+(posn-x e)50)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(-(posn-y e)50))))
-     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
+     ((and (= (posn-x e)(posn-x c))(< (posn-y e)(-(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(+(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(-(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (posn-x e)(+(posn-y e)50))))
-     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
+     ((and (= (posn-x e)(posn-x c))(> (posn-y e)(+(posn-y c)50))(equal? (que_hay2? (convertir (posn-x e)(-(posn-y e)50)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
      ((and (= (posn-x e)(posn-x c))(= (posn-y e)(+(posn-y c)50)))(se_puede_reina2 d c r s v i (convertir (posn-x e)(-(posn-y e)50))))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_reina2 d c r s v i (convertir (-(posn-x e)50)(posn-y e))))
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(se_puede_reina2 d c r s v i (convertir (+(posn-x e)50)(posn-y e))))
      (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
     )
@@ -2251,38 +2254,38 @@
  )
 (define (se_puede_rey2 d c r s v i e)
  (if (or (and (equal? d e8)(equal? c h8))(and (equal? d e8)(equal? c a8)))
-     (if (equal? (que_hay2? c) "torre2.gif")
+     (if (equal? (que_hay2? c) "images/torre2.gif")
      (cond
-     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_rey2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
+     ((and (< (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (+(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_rey2 d c r s v i (convertir (+(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(-(posn-x c)50))(= (posn-y e)(posn-y c)))(ejecutar12 d c r s v i 1))
-     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"vacio.gif"))(se_puede_rey2 d c r s v i (convertir (-(posn-x e)50)(posn-y e)))) 
+     ((and (> (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c))(equal? (que_hay2? (convertir (-(posn-x e)50)(posn-y e)))"images/vacio.gif"))(se_puede_rey2 d c r s v i (convertir (-(posn-x e)50)(posn-y e)))) 
      ((and (= (posn-x e)(+(posn-x c)50))(= (posn-y e)(posn-y c)))(ejecutar12 d c r s v i 2))
      (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
      )
      (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 12 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 12 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil.gif")(jaque 12 d c r s v i 0))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
    )
  )
   (cond
-        ((equal? (que_hay2? c) "vacio.gif")(jaque 12 d c r s v i 0)) 
-        ((equal? (que_hay2? c) "peon.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "torre.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "reina.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "caballo.gif")(jaque 12 d c r s v i 0))
-        ((equal? (que_hay2? c) "alfil.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/vacio.gif")(jaque 12 d c r s v i 0)) 
+        ((equal? (que_hay2? c) "images/peon.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/torre.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/reina.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/caballo.gif")(jaque 12 d c r s v i 0))
+        ((equal? (que_hay2? c) "images/alfil.gif")(jaque 12 d c r s v i 0))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1)))
    )
  )
 )
 
 ;************************************************
-; Regula el movimiento de las fichas segun sean *____________________________________________________________________________
+; Regula el movimiento de las fichas segun sean *
 ;************************************************
 
 (define (filtro  f d c r s v i)
@@ -2303,15 +2306,15 @@
   )
 )
 ;***********************************************************************************
-; Funcion  que ejecuta los movimientos de las fichas del juego una para cada ficha *__________________________________________________
+; Funcion  que ejecuta los movimientos de las fichas del juego una para cada ficha *
 ;***********************************************************************************
 
 (define (ejecutar d c r s v i)
           (if (= (posn-y c) 50)
                   (jaque 5 d c r s v i 0)  
                (begin
-                        (vector-set! (vector-ref vectors v) i "peon.gif")
-                        (vector-set! (vector-ref vectors r) s "vacio.gif")
+                        (vector-set! (vector-ref vectors v) i "images/peon.gif")
+                        (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                         (borrar c)
                         (dibujar c)
                         (borrar d) 
@@ -2320,8 +2323,8 @@
           )
  )
 (define (ejecutar2 d c r s v i)
-          (begin        (vector-set! (vector-ref vectors v) i "torre.gif")
-                        (vector-set! (vector-ref vectors r) s "vacio.gif")
+          (begin        (vector-set! (vector-ref vectors v) i "images/torre.gif")
+                        (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                         (borrar c)
                         (dibujar c)
                         (borrar d) 
@@ -2329,8 +2332,8 @@
           )
 )
 (define (ejecutar3 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "caballo.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/caballo.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2338,8 +2341,8 @@
    )
 )
 (define (ejecutar4 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "alfil.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/alfil.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2347,8 +2350,8 @@
    )
 )
 (define (ejecutar5 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "reina.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/reina.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2357,8 +2360,8 @@
 )
 (define (ejecutar6 d c r s v i z)
   (if (= z 0)
-  (begin       (vector-set! (vector-ref vectors v) i "rey.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/rey.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2366,10 +2369,10 @@
    )
 (if (= z 1)
   (begin
-   (vector-set! (vector-ref vectors 0) 6 "rey.gif")
-   (vector-set! (vector-ref vectors 0) 5 "torre.gif")
-   (vector-set! (vector-ref vectors 0)4 "vacio.gif")
-   (vector-set! (vector-ref vectors 0)7 "vacio.gif")
+   (vector-set! (vector-ref vectors 0) 6 "images/rey.gif")
+   (vector-set! (vector-ref vectors 0) 5 "images/torre.gif")
+   (vector-set! (vector-ref vectors 0)4 "images/vacio.gif")
+   (vector-set! (vector-ref vectors 0)7 "images/vacio.gif")
    (borrar d)
    (borrar c)
    (dibujar g1)
@@ -2378,10 +2381,10 @@
   )
   (if (= z 2)
      (begin
-         (vector-set! (vector-ref vectors 0) 2 "rey.gif")
-         (vector-set! (vector-ref vectors 0) 3 "torre.gif")
-         (vector-set! (vector-ref vectors 0) 4 "vacio.gif")
-         (vector-set! (vector-ref vectors 0) 0 "vacio.gif")
+         (vector-set! (vector-ref vectors 0) 2 "images/rey.gif")
+         (vector-set! (vector-ref vectors 0) 3 "images/torre.gif")
+         (vector-set! (vector-ref vectors 0) 4 "images/vacio.gif")
+         (vector-set! (vector-ref vectors 0) 0 "images/vacio.gif")
          (borrar d)
          (borrar c)
          (dibujar c1)
@@ -2397,8 +2400,8 @@
           (if (= (posn-y c) 400)
                (jaque 11 d c r s v i 0)
                (begin
-                        (vector-set! (vector-ref vectors v) i "peon2.gif")
-                        (vector-set! (vector-ref vectors r) s "vacio.gif")
+                        (vector-set! (vector-ref vectors v) i "images/peon2.gif")
+                        (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                         (borrar c)
                         (dibujar c)
                         (borrar d) 
@@ -2407,8 +2410,8 @@
           )
  )
 (define (ejecutar8 d c r s v i)
-          (begin        (vector-set! (vector-ref vectors v) i "torre2.gif")
-                        (vector-set! (vector-ref vectors r) s "vacio.gif")
+          (begin        (vector-set! (vector-ref vectors v) i "images/torre2.gif")
+                        (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                         (borrar c)
                         (dibujar c)
                         (borrar d) 
@@ -2416,8 +2419,8 @@
           )
 )
 (define (ejecutar9 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "caballo2.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/caballo2.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2425,8 +2428,8 @@
    )
 )
 (define (ejecutar10 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "alfil2.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/alfil2.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2434,8 +2437,8 @@
    )
 )
 (define (ejecutar11 d c r s v i)
-  (begin       (vector-set! (vector-ref vectors v) i "reina2.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/reina2.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2444,8 +2447,8 @@
 )
 (define (ejecutar12 d c r s v i z)
   (if (= z 0)
-  (begin       (vector-set! (vector-ref vectors v) i "rey2.gif")
-               (vector-set! (vector-ref vectors r) s "vacio.gif")
+  (begin       (vector-set! (vector-ref vectors v) i "images/rey2.gif")
+               (vector-set! (vector-ref vectors r) s "images/vacio.gif")
                (borrar c)
                (dibujar c)
                (borrar d) 
@@ -2453,10 +2456,10 @@
    )
   (if (= z 1)
   (begin
-   (vector-set! (vector-ref vectors 7) 6 "rey2.gif")
-   (vector-set! (vector-ref vectors 7) 5 "torre2.gif")
-   (vector-set! (vector-ref vectors 7) 4 "vacio.gif")
-   (vector-set! (vector-ref vectors 7) 7 "vacio.gif")
+   (vector-set! (vector-ref vectors 7) 6 "images/rey2.gif")
+   (vector-set! (vector-ref vectors 7) 5 "images/torre2.gif")
+   (vector-set! (vector-ref vectors 7) 4 "images/vacio.gif")
+   (vector-set! (vector-ref vectors 7) 7 "images/vacio.gif")
    (borrar d)
    (borrar c)
    (dibujar g8)
@@ -2465,10 +2468,10 @@
   )
   (if (= z 2)
      (begin
-         (vector-set! (vector-ref vectors 7) 2 "rey2.gif")
-         (vector-set! (vector-ref vectors 7) 3 "torre2.gif")
-         (vector-set! (vector-ref vectors 7) 4 "vacio.gif")
-         (vector-set! (vector-ref vectors 7) 0 "vacio.gif")
+         (vector-set! (vector-ref vectors 7) 2 "images/rey2.gif")
+         (vector-set! (vector-ref vectors 7) 3 "images/torre2.gif")
+         (vector-set! (vector-ref vectors 7) 4 "images/vacio.gif")
+         (vector-set! (vector-ref vectors 7) 0 "images/vacio.gif")
          (borrar d)
          (borrar c)
          (dibujar c8)
@@ -2484,7 +2487,7 @@
 
 
 ;*************************************
-; Rectifica movimiento de las fichas *____________________________________________________________________________________________________________
+; Rectifica movimiento de las fichas *
 ;*************************************
 
 (define (movimiento_peon f d c r s v i z)
@@ -2769,31 +2772,31 @@
 ;**************************************************************************
 
 (define (pregunta d e)
-  (if (equal? d "vacio.gif")
+  (if (equal? d "images/vacio.gif")
       (coordenada 0 0 0 (get-mouse-click ventana1))
       (cond
-        ((equal? d "peon.gif")(click 1 e ))
-        ((equal? d "torre.gif")(click 2 e ))
-        ((equal? d "caballo.gif")(click 3 e))
-        ((equal? d "alfil.gif")(click 4 e))
-        ((equal? d "reina.gif")(click 5 e))
-        ((equal? d "rey.gif")(click 6 e))
-        ((equal? d "vacio.gif")(coordenada 0 0 0 (get-mouse-click ventana1)))
+        ((equal? d "images/peon.gif")(click 1 e ))
+        ((equal? d "images/torre.gif")(click 2 e ))
+        ((equal? d "images/caballo.gif")(click 3 e))
+        ((equal? d "images/alfil.gif")(click 4 e))
+        ((equal? d "images/reina.gif")(click 5 e))
+        ((equal? d "images/rey.gif")(click 6 e))
+        ((equal? d "images/vacio.gif")(coordenada 0 0 0 (get-mouse-click ventana1)))
         (else (coordenada 0 0 0 (get-mouse-click ventana1))) 
    )
  )
 )
 (define (pregunta2 d e)
-  (if (equal? d "vacio.gif")
+  (if (equal? d "images/vacio.gif")
       (coordenada3 0 0 0 (get-mouse-click ventana1))
       (cond
-        ((equal? d "peon2.gif")(click3 7 e ))
-        ((equal? d "torre2.gif")(click3 8 e ))
-        ((equal? d "caballo2.gif")(click3 9 e))
-        ((equal? d "alfil2.gif")(click3 10 e))
-        ((equal? d "reina2.gif")(click3 11 e))
-        ((equal? d "rey2.gif")(click3 12 e))
-        ((equal? d "vacio.gif")(coordenada3 0 0 0 (get-mouse-click ventana1)))
+        ((equal? d "images/peon2.gif")(click3 7 e ))
+        ((equal? d "images/torre2.gif")(click3 8 e ))
+        ((equal? d "images/caballo2.gif")(click3 9 e))
+        ((equal? d "images/alfil2.gif")(click3 10 e))
+        ((equal? d "images/reina2.gif")(click3 11 e))
+        ((equal? d "images/rey2.gif")(click3 12 e))
+        ((equal? d "images/vacio.gif")(coordenada3 0 0 0 (get-mouse-click ventana1)))
         (else (coordenada3 0 0 0 (get-mouse-click ventana1))) 
    )
  )
@@ -2865,7 +2868,7 @@
 ;          (and (>= (posn-x (mouse-click-posn click))(vector-ref abcisas f))(<= (posn-x (mouse-click-posn click)) (vector-ref abcisas (+ f 1)))(>= (posn-y (mouse-click-posn click)) (vector-ref ordenadas d))(<= (posn-y (mouse-click-posn click))(vector-ref ordenadas (+ d 1))))
 
 ;************************************************
-; Dibujo del menu que define los modos de juego *_______________________________________________________________________________________________________
+; Dibujo del menu que define los modos de juego *
 ;************************************************
 
 (define ventana2 (open-viewport "MENU"  300 325))
@@ -2881,7 +2884,7 @@
 
 
 ;**************************************************
-; Son las funciones que etablecen los parametros  *_____________________________________________________________________________________________________________
+; Son las funciones que etablecen los parametros  *
 ; para cada problema                              *
 ;**************************************************
 
@@ -2909,39 +2912,39 @@
     (borrar g1)
     (borrar f8)
     (borrar h8)
-    (vector-set! uno 0 "vacio.gif")
-    (vector-set! uno 1 "torre.gif")
-    (vector-set! uno 2 "vacio.gif")
-    (vector-set! uno 3 "vacio.gif")
-    (vector-set! uno 4 "vacio.gif")
-    (vector-set! uno 5 "vacio.gif")
-    (vector-set! uno 6 "rey.gif")
-    (vector-set! uno 7 "vacio.gif")
-    (vector-set! dos 1 "vacio.gif")
-    (vector-set! dos 2 "vacio.gif")
-    (vector-set! dos 3 "vacio.gif")
-    (vector-set! dos 4 "reina.gif")
-    (vector-set! tres 1 "alfil.gif")
-    (vector-set! cinco 2 "reina2.gif")
-    (vector-set! cinco 5 "peon2.gif")
-    (vector-set! seis 2 "peon2.gif")
-    (vector-set! siete 2 "vacio.gif")
-    (vector-set! siete 3 "vacio.gif")
-    (vector-set! siete 4 "vacio.gif")
-    (vector-set! siete 5 "torre.gif")
-    (vector-set! ocho 1 "vacio.gif")
-    (vector-set! ocho 3 "vacio.gif")
-    (vector-set! ocho 4 "vacio.gif")
-    (vector-set! ocho 5 "torre2.gif")
-    (vector-set! ocho 6 "vacio.gif")
-    (vector-set! ocho 7 "rey2.gif")
+    (vector-set! uno 0 "images/vacio.gif")
+    (vector-set! uno 1 "images/torre.gif")
+    (vector-set! uno 2 "images/vacio.gif")
+    (vector-set! uno 3 "images/vacio.gif")
+    (vector-set! uno 4 "images/vacio.gif")
+    (vector-set! uno 5 "images/vacio.gif")
+    (vector-set! uno 6 "images/rey.gif")
+    (vector-set! uno 7 "images/vacio.gif")
+    (vector-set! dos 1 "images/vacio.gif")
+    (vector-set! dos 2 "images/vacio.gif")
+    (vector-set! dos 3 "images/vacio.gif")
+    (vector-set! dos 4 "images/reina.gif")
+    (vector-set! tres 1 "images/alfil.gif")
+    (vector-set! cinco 2 "images/reina2.gif")
+    (vector-set! cinco 5 "images/peon2.gif")
+    (vector-set! seis 2 "images/peon2.gif")
+    (vector-set! siete 2 "images/vacio.gif")
+    (vector-set! siete 3 "images/vacio.gif")
+    (vector-set! siete 4 "images/vacio.gif")
+    (vector-set! siete 5 "images/torre.gif")
+    (vector-set! ocho 1 "images/vacio.gif")
+    (vector-set! ocho 3 "images/vacio.gif")
+    (vector-set! ocho 4 "images/vacio.gif")
+    (vector-set! ocho 5 "images/torre2.gif")
+    (vector-set! ocho 6 "images/vacio.gif")
+    (vector-set! ocho 7 "images/rey2.gif")
     (dibujo 0)
     (coordenada 0 0 0 (get-mouse-click ventana1)) 
   )
 )
     
 ;*******************************************
-; Establece el problema que se va efectuar *_______________________________________________________________________________________________________________________________________
+; Establece el problema que se va efectuar *
 ;*******************************************
 
 (define (dibujo n)
