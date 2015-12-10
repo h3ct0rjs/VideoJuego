@@ -1,0 +1,3 @@
+IMPORTANTE
+ejecutar el programa en lenguaje #lang racket
+-si tiene problemas cambie la limitacion de memoria a 2080 o superior-.

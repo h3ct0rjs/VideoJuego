@@ -9,6 +9,7 @@ Juegos Disponibles hasta el momento.
   - Ajedrez Clasico
   - Culebrita
   - Juego de Memoria
+  - Shooter
   - SpaceInvaders
   - Tetris
   - Otros..
@@ -39,12 +40,14 @@ Este repositorio y el codigo ha utilizado las siguientes herramientas
 ### Autores :
 El repositorio es mantenido por multiples miembros, aportes y demas entregadas dadas.No nos hacemos responsables por los usos dados de estos codigos.
 
-A continuacion se listan algunos contribuidores:
+A continuacion se listan los contribuidores:
 
-* Brian Ruiz Idarraga <brianruiz@utp.edu.co>
-* Hector Jimenez      <hfjimenez@utp.edu.co>
-* Gabriel Gutierrez Tamayo <ggutierreztamayo@utp.edu.co>
-* Stiven Cardona Monsalve <cardona-627@utp.edu.co>
+* Brian Ruiz Idarraga             <brianruiz@utp.edu.co>
+* Hector Jimenez                  <hfjimenez@utp.edu.co>
+* Gabriel Gutierrez Tamayo        <ggutierreztamayo@utp.edu.co>
+* Stiven Cardona Monsalve         <cardona-627@utp.edu.co>
+* Brando Carvajal Gonzalez        <gonza.brandon97@gmail.com>
+* Andres Felipe Betancur          <andbet050197@gmail.com>
 * Otros...en orden ascendente de contribuciones.
 
 ### Contribuir
