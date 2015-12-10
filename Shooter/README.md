@@ -1,6 +1,6 @@
 # Proyecto Final Video Juego 2D Space Invader IS105, U.T.P 2015-2
 
-![Shooter](https://raw.githubusercontent.com/heticor915/VideoJuego/)
+![Shooter](https://raw.githubusercontent.com/heticor915/VideoJuego/master/Shooter/captcha/logo.png)
 
 
 
