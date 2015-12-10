@@ -25,6 +25,7 @@ user@evilmachine/VideoJuego/Shooter$ drracket ShooterFinal.rkt
 
 ### Autores :
 Brando Carvajal Gonzalez	      <gonza.brandon97@gmail.com>
+
 Andres Felipe Betancur		      <andbet050197@gmail.com>
 
 Licencia
