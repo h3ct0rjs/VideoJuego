@@ -25,7 +25,9 @@ user@evilmachine/VideoJuego$ drracket CulebritaSnakeListas.rkt
 ```
 
 ### Autores :
-Desconocido
+https://gist.github.com/antedeguemon
+https://github.com/antedeguemon
+antedeguemon
 
 Licencia
 ----
