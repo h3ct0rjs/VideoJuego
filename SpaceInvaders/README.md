@@ -1,14 +1,15 @@
 # Proyecto Final Video Juego 2D Space Invader IS105, U.T.P 2015-2
 
-![SpaceInvaders](https://raw.githubusercontent.com/heticor915/VideoJuego/master/Documentacion/images/logo.png)
+![SpaceInvaders](https://cdn4.iconfinder.com/data/icons/proglyphs-free/512/Invader_1-512.png)
 
+Mira el siguiente video : 
+https://www.youtube.com/watch?v=TQvWOyGKSXs
 
 *VideoJuego*
  : Contiene todo el código desarrollado en Drracket de la version final del video Juego.
 
 *Documentacion*
  : Contiene la documentacion de las funciones, ademas el codigo fuente en LaTeX del manual.
-
 
 ###
 Version
