@@ -48,6 +48,7 @@ A continuacion se listan los contribuidores:
 * Stiven Cardona Monsalve         <cardona-627@utp.edu.co>
 * Brando Carvajal Gonzalez        <gonza.brandon97@gmail.com>
 * Andres Felipe Betancur          <andbet050197@gmail.com>
+* Johan Felipe Marín González     <jofemago@utp.edu.co> https://github.com/jofemago
 * Otros...en orden ascendente de contribuciones.
 
 ### Contribuir
