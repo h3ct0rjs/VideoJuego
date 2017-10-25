@@ -1,8 +1,5 @@
 # Proyecto Video Juego: Tetris Clasico, Johan Felipe Marín González IS105, U.T.P 2015-2
 
-![Ajedrez](http://www.rtv.org.mx/masdeportes/wp-content/uploads/sites/4/2015/04/ajedrez-de-maestro.jpg)
-
-
 *VideoJuego*
  : Contiene todo el código desarrollado en Drracket de la version final del video Juego.
 
