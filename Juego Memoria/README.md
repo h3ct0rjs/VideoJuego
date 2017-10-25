@@ -1,4 +1,4 @@
-# Proyecto Final Video Juego: Ajedres Clasico Stiven Cardona IS105, U.T.P 2015-2
+# Proyecto Final Video Juego: Gabriel Gutierrez Tamayo IS105, U.T.P 2015-2
 
 ![JuegoMemoria](http://www.naturallysweet.com.au/blogs/wp-content/uploads/2014/01/improve-your-memory-natural-sugar.jpg)
 
