@@ -7,8 +7,7 @@
 
 
 ;***************************************************************************
-;Desarrollador Desconocido, Aporte de Christian Daniel Nuñez Mejia
-;plataforma.utp.edu.co
+;Desarrollador Original Johan Felipe Marín González, Aporte de Christian Daniel Nuñez Mejia
 ;Proyecto Final de Programacion 1. UTP 2015-2.
 ;***************************************************************************
 
